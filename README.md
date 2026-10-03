@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Circle — Social Feed (React + Vite + MUI)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A friendly, Facebook-style social feed UI built with **React 18**, **Vite** and **Material UI**.
 
-## Available Scripts
+## Pages
+| Route | What you can do |
+|---|---|
+| `/` Home | Stories, composer, feed, trending, online friends |
+| `/profile` | Cover, bio, stats, your posts / photos / saved posts, edit profile |
+| `/friends` | All friends, accept / decline requests, add suggestions, search |
+| `/groups` | Join / leave groups, filter by category, create a group |
+| `/pages` | Follow / unfollow pages |
+| `/marketplace` | Filter & sort products, wishlist, cart drawer with quantities and checkout |
+| `/messages` | Chat threads with typing indicator and automatic demo replies |
+| `/notifications` | Read / unread, mark all as read, delete |
+| `/settings` | Account details, dark mode, notification & privacy switches, reset demo data |
 
-In the project directory, you can run:
+Your profile, saved posts, friends, groups, followed pages, cart and preferences are remembered in `localStorage`.
 
-### `npm start`
+## Features
+- Stories strip, "What's on your mind?" composer and a working **Create Post** modal (text, emoji, sample images or upload)
+- Posts with like, comment (add your own), share (copy link), bookmark and double-click to like
+- Live search across posts and people
+- Light / dark mode (remembered between visits)
+- Online friends, trending tags, latest photos and conversations
+- Responsive: sidebars on desktop, bottom navigation on mobile
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Getting started
+```bash
+npm install
+npm run dev      # start dev server on http://localhost:3000
+npm run build    # production build in /dist
+npm run preview  # preview the production build
+```
